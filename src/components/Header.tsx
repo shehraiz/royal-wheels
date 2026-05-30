@@ -26,6 +26,7 @@ export default function Header() {
           <Link href="/fleet?category=Sedan" className="hover:text-ink transition-colors">Sedans</Link>
           <Link href="/fleet?category=SUV" className="hover:text-ink transition-colors">SUVs</Link>
           <Link href="/fleet?category=Pickup%2F4x4" className="hover:text-ink transition-colors">4x4 / Pickup</Link>
+          <Link href="/escort" className="hover:text-gold transition-colors font-semibold text-gold/80">Escort & Protocol</Link>
           <a href="https://wa.me/923005245427" target="_blank" rel="noopener noreferrer" className="hover:text-ink transition-colors">WhatsApp</a>
         </nav>
 

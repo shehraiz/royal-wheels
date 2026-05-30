@@ -90,3 +90,18 @@ model Setting {
   key   String @id
   value String
 }
+
+model QuoteRequest {
+  id             String   @id @default(cuid())
+  name           String
+  phone          String
+  email          String?
+  serviceType    String   // ESCORT | PROTOCOL | CONVOY
+  date           DateTime
+  pickupLocation String
+  destination    String
+  vehicleCount   Int?
+  notes          String?
+  status         String   @default("NEW") // NEW | CONTACTED | QUOTED | CLOSED
+  createdAt      DateTime @default(now())
+}

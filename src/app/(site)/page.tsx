@@ -21,12 +21,12 @@ export default async function HomePage() {
   ];
 
   const services = [
-    { icon: "✈️", label: "Airport Transfer" },
-    { icon: "💼", label: "Corporate Travel" },
-    { icon: "👨‍👩‍👧", label: "Family Trips" },
-    { icon: "🏔️", label: "Intercity Rides" },
-    { icon: "💍", label: "Wedding Cars" },
-    { icon: "👑", label: "VIP & Executive" },
+    { icon: "✈️", label: "Airport Transfer", href: "/fleet" },
+    { icon: "💼", label: "Corporate Travel", href: "/fleet" },
+    { icon: "👨‍👩‍👧", label: "Family Trips", href: "/fleet" },
+    { icon: "🏔️", label: "Intercity Rides", href: "/fleet" },
+    { icon: "💍", label: "Wedding Cars", href: "/fleet" },
+    { icon: "🛡️", label: "Escort & Protocol", href: "/escort" },
   ];
 
   return (
@@ -95,7 +95,7 @@ export default async function HomePage() {
             {services.map((s) => (
               <Link
                 key={s.label}
-                href={`/fleet`}
+                href={s.href}
                 className="flex flex-col items-center gap-2 bg-white border border-border rounded-2xl py-5 px-3 hover:border-gold/50 hover:shadow-sm transition-all group"
               >
                 <span className="text-2xl">{s.icon}</span>
